@@ -1,0 +1,468 @@
+/*Comentarios
+elemento {
+     propiedad:valor;
+} */
+/*font-family: 'Montserrat', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+/*mobile Media query
+@media only screen and (max-width:500px);
+Tablet Media query
+@media only screen and (min-width: 501px) and (max-width:960px)
+Desktop Media query
+@media only screen and (min-width:961px)*/
+
+
+html{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 62.5%;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-family: 'Montserrat', sans-serif, black;
+    font-weight: 900;
+    font-size: 7rem;
+    margin-bottom: 0px;
+}
+h2{
+    font-size: 4rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+h3{
+    color: #256AA1;
+    font-size: 4rem;
+    font-weight: 900;
+}
+h4{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+}
+h5{
+    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+p{
+    color: gray;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*menú de navegación*/
+
+header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+}
+.logo{
+    width: 200px;
+    float: left;
+    padding: 8px;
+}
+header nav{
+    color: white;
+    display: block;
+    height: 90px;
+}
+header ul{
+    display: flex;
+    margin: 0px;
+    position: absolute;
+    right: 80px;
+}
+header nav ul li{
+    list-style: none;
+    margin-left: 75px;
+    padding: 35px 0;
+    float: left;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: #256AA1;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+header nav ul li a:hover{
+    color: #f36200;
+}
+.login{
+    background-color: #F36200;
+    color: white;
+    padding: 10px 70px;
+    border-radius: 7px;
+}
+.login:hover{
+    background-color: #256AA1;
+    color: white;
+}
+/*Banner principal*/
+.principal{
+    width: 100%;
+    height: 900px;
+    background-image: url(./medios/Principalpix.png);
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode: multiply;
+    color: white;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    background-size: cover;
+}
+.principal h1{
+    margin-left: 160px;
+    margin-top: 100px;
+}
+.principal h5{
+    margin-top: 8px;
+    margin-bottom: 300px;
+    margin-left: 160px;
+}
+ul{
+    list-style-type: disc;
+}
+/*Destacados*/
+
+.carousel1{
+    border-radius: 10px;
+    width: 90%;
+    box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.21);
+    -webkit-box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.21);
+    -moz-box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.21);
+}
+.destacados-padre{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.destacados-section{
+    margin-bottom: 60px;
+    width: 100%;
+}
+.destacados-section h2{
+    margin-right: 165px;
+    margin-bottom: 80px;
+    margin-top: 80px;
+    color: #F36200;
+    text-align: right;
+}
+
+/*Recientes*/
+.carousel2{
+    border-radius: 10px;
+    width: 90%;
+    box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.21);
+    -webkit-box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.21);
+    -moz-box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.21);
+}
+
+.recientes-section h2{
+    margin-left: 160px;
+    color: #256AA1;
+    margin-bottom: 80px;
+}
+.recientes-padre{
+    width: 80%;
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.recientes-section{
+    margin-bottom: 80px;
+    margin-top: 80px;
+}
+/*SERVICIOS O HERRAMIENTAS*/
+.servicios-section{
+    display: grid;
+    width: 90%;
+    grid-template-rows: 100px 350px 350px;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+    "servicios servicios"
+    "img1 credito"
+    "asegura img2";
+    row-gap: 10px;
+    column-gap: 60px;
+    align-items: center;
+    margin: 0 auto;
+}
+.grid1{
+    grid-area: servicios;
+    margin-right: 120px;
+    align-self: center;
+    justify-self: end;
+    text-align: right;
+}
+.grid2{
+    grid-area: img1;
+    justify-self: end;
+    text-align: right;
+}
+.grid3{
+    grid-area: credito;
+    width: 80%;
+    justify-self: flex-start;
+    margin-bottom: 20px;
+}
+.grid4{
+    grid-area: asegura;
+    width: 80%;
+    text-align: right;
+    justify-self: flex-end;
+}
+.grid5{
+    grid-area: img2;
+    justify-self: flex-start;
+}
+.servicios{
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.21);
+    -webkit-box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.21);
+    -moz-box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.21);
+}
+.servicios-section h2{
+    color: #F36200;
+}
+.servicios-section h4{
+    color: #256AA1;
+    margin-bottom: 20px;
+}
+.servicios-section p{
+    margin-bottom: 30px;
+}
+.boton{
+    background-color: #256AA1;
+    color: white;
+    padding: 10px 70px;
+    border-radius: 7px;
+    text-decoration: none;
+    width: 120px;
+}
+.boton a{
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+.boton:hover{
+    background-color: #F36200;
+}
+/*
+
+.servicios-section{
+    margin-bottom: 80px;
+    width: 100%;
+}
+.credito, .asegura{
+
+    margin-bottom: 50px;
+    margin-left: 160px;
+}
+.credito-text{
+    width: 50%;
+}
+
+.servicios-padre{
+    width: 100%;
+}
+.asegura-text{
+    margin-right: 50px;
+    text-align: right;
+} */
+/*ALIADOS*/
+hr{
+    border-color: #F36200;
+    border-width: 8px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.aliados-section h2{
+    margin-left: 160px;
+    color: #256AA1;
+    margin-bottom: 80px;
+}
+.aliados-section{
+    margin-top: 80px;
+}
+.aliados-padre{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-left: 160px;
+    justify-content: space-between;
+
+}
+.logos{
+    width: 15%;
+}
+/*FOOTER*/
+footer{
+    background-image: url(./medios/footer.png);
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-div{
+    width: 100%;
+}
+.redes{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 150px;
+}
+.redes p{
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-right: 20px;
+}
+.redes img{
+    width: 40px;
+}
+.footerhr{
+    width: 40%;
+    height: 0;
+    border: medium none;
+    border-top: 1px dashed white;
+    border-spacing: 0 30px;
+    border-width: 1px;
+    display: block;
+    justify-content: center;
+    margin: auto;
+}
+.queja p{
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+footer ul{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+    margin: 30px auto 30px auto;
+}
+footer li{
+    color: white;
+    list-style: none;
+    font-size: 1.3rem;
+}
+.creditos p{
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/*Nosotros*/
+/*banner principal*/
+.nosotros{
+    width: 100%;
+    height: 500px;
+    background-image: url(./medios/young-happy-couple-making-agreement-with-their-financial-advisor-home-men-are-shaking-hands.jpg);
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode: multiply;
+    color: white;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    background-size: cover;
+}
+.nosotros h1{
+    text-align: center;
+    margin-top: 100px;
+}
+/*Nuestros servicios*/
+.nuestrosservicios h2{
+    margin-bottom: 80px;
+    margin-top: 80px;
+    color: #256AA1;
+    text-align: center;
+}
+.serv{
+    margin-bottom: 40px;
+}
+.cardtitle h3{
+    color: #a1a1a1;
+    font-size: 2.3rem;
+}
+.text{
+    margin-bottom: 60px;
+}
+.text h2{
+    color: #F36200;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+.picevo{
+    border-radius: 7px;
+}
+.evolucionamos p{
+    font-size: 1.5rem;
+    margin-left: 30px;
+    margin-top: 30px;
+    font-weight: 400;
+}
+/*Blog*/
+.blog{
+    width: 100%;
+    height: 500px;
+    background-image: url(./medios/servicios/12010.png);
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode: multiply;
+    color: white;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    background-size: cover;
+}
+.blog h1{
+    text-align: center;
+    margin-top: 100px;
+}
+.blogcard h2{
+    margin-top: 30px;
+    color: #256AA1;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.blogcard p{
+    margin-top: 30px;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.blogcol{
+    margin-top: 50px;
+}
