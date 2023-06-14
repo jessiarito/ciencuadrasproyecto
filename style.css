@@ -494,3 +494,51 @@ footer li{
     margin-left: 160px;
     margin-top: 100px;
 }
+.resultados h2{
+    margin-left: 165px;
+    margin-bottom: 80px;
+    margin-top: 80px;
+    color: #256AA1;
+    text-align: left;
+    font-size: 4rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+.cardbusqueda{
+    margin-left: 20px;
+}
+.cardbusqueda h3{
+    color: #818080;
+    font-size: 2.3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.precio{
+    color: #818080;
+    font-size: 2.2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+.ciudad{
+    color: #256AA1;
+    font-size: 1.8rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+.espacio{
+    color: #256AA1;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+.map h2{
+    margin-right: 165px;
+    margin-bottom: 80px;
+    margin-top: 80px;
+    color: #F36200;
+    text-align: right;
+    font-size: 4rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
