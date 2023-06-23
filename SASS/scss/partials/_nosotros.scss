@@ -1,0 +1,51 @@
+/*nosotros*/
+/*banner principal*/
+.nosotros{
+    width: 100%;
+    height: 500px;
+    background-image: url(./medios/young-happy-couple-making-agreement-with-their-financial-advisor-home-men-are-shaking-hands.jpg);
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode: multiply;
+    color: white;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    background-size: cover;
+    h1{
+        text-align: center;
+        margin-top: 100px;
+    }
+}
+/*Nuestros servicios*/
+.nuestrosservicios h2{
+    margin-bottom: 80px;
+    margin-top: 80px;
+    color: #256AA1;
+    text-align: center;
+}
+.serv{
+    margin-bottom: 40px;
+}
+.cardtitle h3{
+    color: #a1a1a1;
+    font-size: 2.3rem;
+}
+.text{
+    margin-bottom: 60px;
+}
+.text h2{
+    color: #F36200;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+.picevo{
+    border-radius: 7px;
+}
+.evolucionamos p{
+    font-size: 1.5rem;
+    margin-left: 30px;
+    margin-top: 30px;
+    font-weight: 400;
+}
