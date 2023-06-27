@@ -591,7 +591,9 @@ hr {
 .icons {
   width: 3%;
 }
-
+.imagencasa{
+  margin-bottom: 10px;
+}
 .name {
   display: flex;
   width: 100%;
@@ -803,7 +805,27 @@ hr {
           margin-top: 50px;
           font-size: 3rem;
         }
-
+        /*Resultados*/
+        .principalresult h1 {
+          font-weight: 900;
+          font-size: 5rem;
+          margin-left: 50px;
+        }
+        .titleapto h2{
+          margin-left: 50px;
+          font-size: 3rem;
+        }
+        .titleapto p {
+          margin-left: 50px;
+          margin-right: 10px;
+          font-size: 1.7rem;
+        }
+        .icons {
+          width: 7%;
+        }
+        .imagencasa{
+          margin-bottom: 20px;
+        }
 
 
 
