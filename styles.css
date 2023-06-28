@@ -600,20 +600,11 @@ hr {
   justify-content: flex-start;
 }
 /*mediaqueries*/
-@media only screen and (max-width:800px) {
+@media only screen and (min-width:601px) (max-width:800px) {
         /*index*/
         .principal{
               width: 100%;
               height: 500px;
-              background-image: url(./medios/Principalpix.png);
-              background-color: rgba(0,0,0,0.5);
-              background-blend-mode: multiply;
-              color: white;
-              display: flex;
-              align-items: left;
-              justify-content: center;
-              flex-direction: column;
-              background-size: cover;
         }
         .principal h1{
               font-family: 'Montserrat', sans-serif, black;
@@ -752,6 +743,14 @@ hr {
           margin-top: 20px;
           margin-bottom: 30px;
         }
+        .footerhr {
+          width: 40%;
+          height: 0;
+          border: medium none;
+          border-top: 40px dashed white;
+          border-spacing: 0 30px;
+          border-width: 40px;
+        }
         footer ul {
           width: 70%;
           margin: 30px auto 30px auto;
@@ -763,7 +762,7 @@ hr {
           text-align: center;
         } 
         .creditos p {
-          font-size: 1rem;
+          font-size: 0.9rem;
           text-align: center;
           justify-content: center;
           margin-top: 30px;
@@ -826,11 +825,220 @@ hr {
         .imagencasa{
           margin-bottom: 20px;
         }
+}
+@media only screen and (max-width:600px){
+        .principal{
+          width: 100%;
+          height: 500px;
+        }
+        .principal h1{
+            font-weight: 900;
+            font-size: 4rem;
+            margin-left: 25px;
+            margin-top: 380px;
+        }
+        .principal p{
+            font-size: 1.8rem;
+            margin-left: 25px;
+        }
+        h2{
+            font-size: 2.5rem;
+        }
+        .destacados-section h2{
+            margin-right: 20px;
+            margin-bottom: 50px;
+            margin-top: 50px;
+            font-size: 2.5rem;
+        }
+        .cardbusqueda {
+            margin-left: 10px;
+        }
+        .cardbusqueda h3 {
+            color: #818080;
+            font-size: 1.5rem;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 700;
+            margin-top: 20px;
+        }
+        .precio {
+            font-size: 1.5rem;
+        }
+        .ciudad {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-top: 5px;
+        }
+        .espacio {
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+        .recientes-section {
+            margin-bottom: 50px;
+            margin-top: 50px;
+        }
+        .recientes-section h2 {
+            margin-left: 20px;
+            color: #256AA1;
+            margin-bottom: 50px;
+            font-size: 2.5rem;
+        }
+        .grid1 {
+            grid-area: servicios;
+            margin-right: 50px;
+        }
+        .servicios {
+            width: 80%;
+        }
+        .aliados-section{
+            margin-top: 50px;
+        }
+        .aliados-section h2 {
+            margin-left: 20px;
+            margin-bottom: 50px;
+            font-size: 2.5rem;
+        }
+        .aliados-padre{
+            width: 80%;
+            margin-bottom: 50px;
+            margin-left: 50px;
+        }
+        .servicios-section{
+            row-gap: 0px;
+            column-gap: 30px;
+        }
+        .servicios-section h2{
+            margin-right: 20px;
+            font-size: 2.5rem;
+        }
+        .servicios-section h4{
+            margin-right: 10px;
+            font-size: 2rem;
+        }
+        .servicios-section p{
+            margin-right: 0px;
+            font-size: 1.2rem;
+        }
+        .servicios{
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.21);
+        -webkit-box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.21);
+        -moz-box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.21);
+        }
+        .grid3{
+        grid-area: credito;
+        width: 100%;
+        justify-self: flex-start;
+        }
+        .grid4{
+          grid-area: asegura;
+          width: 100%;
+          text-align: right;
+          justify-self: flex-end;
+        }
+        .boton {
+        padding: 8px 20px;
+        border-radius: 7px;
+        text-decoration: none;
+        width: 120px;
+        }
+        .boton a {
+        font-size: 3rem;
+        font-weight: bold;
+        font-family: "Montserrat", sans-serif;
+        }
+        .redes{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-top: 150px;
+        }
+        .redes p{
+        font-size: 0.8rem;
+        margin-right: 10px;
+        margin-left: 10px;
+        }
+        .redes img{
+        width: 20px;
+        }
+        .queja p{
+        font-size: 1rem;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        }
+        footer ul {
+        width: 70%;
+        margin: 30px auto 30px auto;
+        }
+        footer li {
+        color: white;
+        list-style: none;
+        font-size: 1rem;
+        text-align: center;
+        } 
+        .creditos p {
+        font-size: 1rem;
+        text-align: center;
+        justify-content: center;
+        margin-top: 30px;
+        }
+        /*nosotros*/
+        .nosotros h1{
+        font-size: 4rem;
+        }
+        .cardtitle h3 {
+          font-size: 1.8rem;
+        }
+        /*inmobiliaria*/
+        .inmobiliaria{
+        width: 100%;
+        height: 300px;
+        }
+        .inmobiliaria h1 {
+        font-family: "Montserrat", sans-serif, black;
+        font-weight: 900;
+        font-size: 4rem;
+        margin-left: 40px;
+        margin-top: 120px;
+        }
+        .resultados h2 {
+        margin-left: 20px;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        font-size: 2.5rem;
+        }
+        .map h2 {
+        margin-right: 50px;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        font-size: 2.5rem;
+        }
+        /*Resultados*/
+        .principalresult h1 {
+        font-weight: 900;
+        font-size: 5rem;
+        margin-left: 50px;
+        }
+        .titleapto h2{
+        margin-left: 50px;
+        font-size: 2.5rem;
+        }
+        .titleapto p {
+        margin-left: 50px;
+        margin-right: 10px;
+        font-size: 1.7rem;
+        }
+        .icons {
+        width: 7%;
+        }
+        .imagencasa{
+        margin-bottom: 20px;
+        }
+
 
 
 
 
 
 }
-
 /*# sourceMappingURL=styles.css.map */
