@@ -75,8 +75,12 @@ header {
   font-size: 1.5rem;
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
+  transition: color 0.3s ease-in-out;
 }
-
+#barranav a.active,
+#barranav a:hover {
+  color: #FF6347; /* Cambia el color al que desees cuando se pase el mouse o esté en la página activa */
+}
 #navegador {
   width: 100%;
   color: white;
@@ -87,6 +91,9 @@ header {
   display: flex;
   justify-content: flex-end;
   margin-right: 50px;
+}
+.nav-link: a:hover {
+  color: #F36200;
 }
 
 /*Footer*/
@@ -227,6 +234,21 @@ ul {
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
 }
+.carruselhov::before{
+    transition: all .3s ease-in;
+    background-color:white;
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+.carruselhov:hover::before{
+    opacity: .3 ;
+}
 
 /*Recientes*/
 .carousel2 {
@@ -280,7 +302,6 @@ ul {
 .servicios-section p {
   margin-bottom: 30px;
 }
-
 .grid1 {
   grid-area: servicios;
   margin-right: 120px;
@@ -293,6 +314,7 @@ ul {
   grid-area: img1;
   justify-self: end;
   text-align: right;
+  width: 90%;
 }
 
 .grid3 {
@@ -312,6 +334,7 @@ ul {
 .grid5 {
   grid-area: img2;
   justify-self: flex-start;
+  width: 90%;
 }
 
 .servicios {
@@ -398,7 +421,21 @@ hr {
   color: #256AA1;
   text-align: center;
 }
-
+.servhov::before{
+  transition: all .3s ease-in;
+  background-color: #F36200;
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.servhov:hover::before{
+  opacity: .3 ;
+}
 .serv {
   margin-bottom: 40px;
 }
@@ -460,7 +497,21 @@ hr {
   font-size: 1.5rem;
   font-weight: 400;
 }
-
+.blogcard::before{
+  transition: all .3s ease-in;
+  background-color: #256AA1;
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.blogcard:hover::before{
+  opacity: .3 ;
+}
 .blogcol {
   margin-top: 50px;
 }
@@ -1034,11 +1085,5 @@ hr {
         .imagencasa{
         margin-bottom: 20px;
         }
-
-
-
-
-
-
 }
 /*# sourceMappingURL=styles.css.map */
