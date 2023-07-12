@@ -61,13 +61,14 @@ header {
 
 .logo {
   width: 200px;
-  float: left;
-  padding: 8px;
+  display: flex;
+  justify-content: center;
 }
 
 #barranav {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
+  margin-right: 30px;
 }
 #barranav a {
   text-decoration: none;
@@ -77,9 +78,12 @@ header {
   font-family: "Montserrat", sans-serif;
   transition: color 0.3s ease-in-out;
 }
+.nav-link{
+  margin-left: 30px;
+}
 #barranav a.active,
 #barranav a:hover {
-  color: #FF6347; /* Cambia el color al que desees cuando se pase el mouse o esté en la página activa */
+  color: #FF6347; 
 }
 #navegador {
   width: 100%;
@@ -90,12 +94,10 @@ header {
 .barranav {
   display: flex;
   justify-content: flex-end;
-  margin-right: 50px;
 }
 .nav-link: a:hover {
   color: #F36200;
 }
-
 /*Footer*/
 footer {
   background-image: url(./medios/footer.png);
@@ -859,14 +861,14 @@ hr {
         .principalresult h1 {
           font-weight: 900;
           font-size: 5rem;
-          margin-left: 50px;
+          margin-left: 20px;
         }
         .titleapto h2{
-          margin-left: 50px;
+          margin-left: 20px;
           font-size: 3rem;
         }
         .titleapto p {
-          margin-left: 50px;
+          margin-left: 20px;
           margin-right: 10px;
           font-size: 1.7rem;
         }
@@ -1066,18 +1068,18 @@ hr {
         }
         /*Resultados*/
         .principalresult h1 {
-        font-weight: 900;
-        font-size: 5rem;
-        margin-left: 50px;
+          font-weight: 900;
+          font-size: 5rem;
+          margin-left: 20px;
         }
         .titleapto h2{
-        margin-left: 50px;
-        font-size: 2.5rem;
+          margin-left: 20px;
+          font-size: 3rem;
         }
         .titleapto p {
-        margin-left: 50px;
-        margin-right: 10px;
-        font-size: 1.7rem;
+          margin-left: 20px;
+          margin-right: 10px;
+          font-size: 1.7rem;
         }
         .icons {
         width: 7%;
