@@ -1,0 +1,232 @@
+/*mediaquerys*/
+@media only screen and (max-width:500px) {
+    /*index*/
+    .principal{
+            width: 100%;
+            height: 500px;
+            background-image: url(./medios/Principalpix.png);
+            background-color: rgba(0,0,0,0.5);
+            background-blend-mode: multiply;
+            color: white;
+            display: flex;
+            align-items: left;
+            justify-content: center;
+            flex-direction: column;
+            background-size: cover;
+        h1{
+            font-family: 'Montserrat', sans-serif, black;
+            font-weight: 900;
+            font-size: 5rem;
+            margin-left: 40px;
+            margin-top: 380px;
+        }
+        p{
+            margin-top: 8px;
+            margin-bottom: 300px;
+            margin-left: 40px;
+            color: white;
+        }
+    }
+    h2{
+        font-size: 2rem;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 900;
+    }
+    .destacados-section{
+        h2{
+            margin-right: 50px;
+            margin-bottom: 50px;
+            margin-top: 50px;
+            font-size: 3rem;
+        }
+    }
+    .cardbusqueda {
+            margin-left: 10px;
+            h3 {
+                color: #818080;
+                font-size: 1.5rem;
+                font-family: "Montserrat", sans-serif;
+                font-weight: 700;
+                margin-top: 20px;
+            }
+    .precio {
+                font-size: 1.5rem;
+            }
+    .ciudad {
+                font-size: 1.3rem;
+                font-weight: 400;
+            
+            }
+    .espacio {
+                font-size: 1rem;
+                font-weight: 700;
+            }
+    }
+    .recientes-section {
+        margin-bottom: 50px;
+        margin-top: 50px;
+        h2 {
+            margin-left: 50px;
+            margin-bottom: 50px;
+        }
+      }
+    .servicios-section{
+        h2 {
+            margin-right: 0px;
+            margin-bottom: 50px;
+            margin-top: 50px;
+            font-size: 3rem;
+        }
+        h4 {
+            color: #256AA1;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+    }
+    .grid1 {
+        grid-area: servicios;
+        margin-right: 30px;
+    }
+    .servicios {
+        width: 80%;
+    }
+    .servicios-section{
+        h2{
+          margin-right: 50px;
+        }
+        h4{
+            margin-right: 50px;
+            font-size: 2.5rem;
+        }
+        p{
+            margin-right: 50px;
+            font-size: 1.5rem;
+        }
+    }
+    .servicios{
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.21);
+        -webkit-box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.21);
+        -moz-box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.21);
+      }
+    .grid3{
+        grid-area: credito;
+        width: 100%;
+        justify-self: flex-start;
+    }
+    .grid4{
+          grid-area: asegura;
+          width: 100%;
+          text-align: right;
+          justify-self: flex-end;
+    }
+    .boton {
+        padding: 10px 70px;
+        border-radius: 7px;
+        text-decoration: none;
+        width: 120px;
+        margin-right: 40px;
+        a {
+            font-size: 3rem;
+            font-weight: bold;
+            font-family: "Montserrat", sans-serif;
+        }
+    }
+    .aliados-section{
+        margin-top: 50px;
+        h2{
+            margin-left: 50px;
+            margin-bottom: 50px;
+        }
+    }
+    .aliados-padre{
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 30px;
+        margin-left: 160px;
+        justify-content: space-between;
+    }
+    .redes{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-top: 150px;
+        p{
+            color: white;
+            font-size: 1rem;
+            text-align: center;
+            margin-right: 20px;
+        }
+        img{
+            width: 30px;
+        }
+    }
+    .boton {
+        padding: 10px 70px;
+        border-radius: 7px;
+        text-decoration: none;
+        width: 120px;
+        margin-right: 40px;
+        a {
+            font-size: 3rem;
+            font-weight: bold;
+            font-family: "Montserrat", sans-serif;
+        }
+    }
+    .redes{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-top: 150px;
+        p{
+            font-size: 1rem;
+            margin-right: 20px;
+        }
+        img{
+            width: 30px;
+        }
+    }
+    .queja p{
+        font-size: 1.3rem;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    footer{
+        ul {
+            width: 70%;
+            margin: 30px auto 30px auto;
+        }
+        li {
+            color: white;
+            list-style: none;
+            font-size: 1.3rem;
+            text-align: center;
+        }
+    }
+    .creditos p {
+        font-size: 1rem;
+        text-align: center;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    /*nosotros*/
+    .nosotros{
+        h1{
+        text-align: center;
+        margin-top: 100px;
+        }
+    }   
+    /*inmobiliaria*/
+    .inmobiliaria{
+        height: 500px;
+        h1 {
+            font-size: 5rem;
+            margin-left: 40px;
+            margin-top: 120px;
+        }
+    }
+}

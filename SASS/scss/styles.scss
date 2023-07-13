@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+html{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 62.5%;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-family: 'Montserrat', sans-serif, black;
+    font-weight: 900;
+    font-size: 7rem;
+    margin-bottom: 0px;
+}
+h2{
+    font-size: 4rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+h3{
+    color: #256AA1;
+    font-size: 4rem;
+    font-weight: 900;
+}
+h4{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+}
+h5{
+    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+p{
+    color: gray;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@import "./partials/variables";
+@import "./partials/headerfooter";
+@import "./partials/index";
+@import "./partials/nosotros";
+@import "./partials/blog";
+@import "./partials/inmobiliaria";
+@import "./partials/resultados";
+@import "./partials/mediaquerys";
+
+
+
